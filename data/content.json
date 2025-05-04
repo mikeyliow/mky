@@ -1,0 +1,29 @@
+{
+    "name": "Mikey",
+    "title": "gen-z techie",
+    "bio": "just a guy expeirencing a lil mid-life crisis, figuring out how to maximize my potential while enjoying the process",
+    "email": "mikeyliowgianhao@gmail.com",
+    "socialLinks": [
+        {
+            "platform": "Twitter",
+            "url": "#",
+            "icon": "twitter"
+        },
+        {
+            "platform": "GitHub",
+            "url": "https://github.com/mikeyliow",
+            "icon": "github"
+        },
+        {
+            "platform": "LinkedIn",
+            "url": "https://www.linkedin.com/in/mikeyliow/",
+            "icon": "linkedin"
+        },
+        {
+            "platform": "Instagram",
+            "url": "#",
+            "icon": "instagram"
+        }
+    ],
+    "personalMessage": "Currently a <span class='highlight'>SWE @ Grab</span> & <span class='highlight'>AI Research @ UM</span>. On the side, Wanna build projects that contribute meaningfully to society, trying to aim to document my life more through socmed.<br>Based in <span class='highlight'>Kuala Lumpur, Malaysia</span> 🇲🇾"
+} 
