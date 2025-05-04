@@ -37,7 +37,7 @@ async function loadContent() {
         }
 
         // Update page title
-        document.title = `${data.name} | Personal Site`;
+        document.title = `${data.name} | personal site`;
     } catch (error) {
         console.error('Error loading content:', error);
     }
