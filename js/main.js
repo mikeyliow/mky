@@ -3,15 +3,12 @@ async function loadContent() {
     try {
         const response = await fetch('data/content.json');
         const data = await response.json();
-        
-        // Create gradient favicon
-        createGradientFavicon();
-        
+
         // Update simple text content
         document.querySelectorAll('[data-content]').forEach(element => {
             const contentPath = element.getAttribute('data-content');
             if (contentPath === 'socialLinks') return; // Handle social links separately
-            
+
             // Handle nested properties (e.g., personalMessage.currentStatus)
             const value = contentPath.split('.').reduce((obj, key) => obj[key], data);
             if (value) {
@@ -43,35 +40,10 @@ async function loadContent() {
     }
 }
 
-function createGradientFavicon() {
-    // Create canvas
-    const canvas = document.createElement('canvas');
-    canvas.width = 32;
-    canvas.height = 32;
-    const ctx = canvas.getContext('2d');
-
-    // Fill with crimson
-    ctx.fillStyle = '#dc143c';
-    ctx.fillRect(0, 0, 32, 32);
-
-    // Load original icon
-    const img = new Image();
-    img.src = 'images/icon.png';
-    img.onload = function() {
-        // Draw original icon as mask
-        ctx.globalCompositeOperation = 'destination-in';
-        ctx.drawImage(img, 0, 0, 32, 32);
-
-        // Set as favicon
-        const link = document.querySelector("link[rel~='icon']");
-        link.href = canvas.toDataURL('image/png');
-    };
-}
-
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     loadContent();
-    
+
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
