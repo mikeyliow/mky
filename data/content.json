@@ -1,8 +1,8 @@
 {
     "name": "mikey",
-    "title": "gen-z techie",
+    "title": "builder x creator",
     "bio": "🌟 my north star is to leave a lasting legacy by contributing meaningfully to society with the best of my abilities",
-    "email": "mikeyliowgianhao@gmail.com",
+    "email": "me@mikey.my",
     "socialLinks": [
         {
             "platform": "Twitter",
@@ -25,5 +25,5 @@
             "icon": "instagram"
         }
     ],
-    "personalMessage": "Currently a <span class='highlight'>SWE @ Grab</span> & <span class='highlight'>AI Research @ UM</span>. always building, creating, yapping and vibing. Practicing delayed gratification, and betting on myself.<br>❤️ from <span class='highlight'>Kuala Lumpur, Malaysia</span> 🇲🇾"
+    "personalMessage": "Currently building <a href='https://heirlight.com/' target='_blank' class='highlight'>heirlight</a> & <span class='highlight'>AI Research @ UM</span>. Practicing delayed gratification, living life to the fullest & betting on myself.<br>❤️ from <span class='highlight'>Kuala Lumpur, Malaysia</span> 🇲🇾"
 }
